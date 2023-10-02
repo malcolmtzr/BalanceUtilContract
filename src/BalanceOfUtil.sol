@@ -1,14 +1,10 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.13;
 
+import "./abi/multicall.json";
+
 contract BalanceOfUtil {
-    uint256 public number;
+    address public multicallAddress = 0xC43a7181654639556e4caca1bf9219C14a106401;
 
-    function setNumber(uint256 newNumber) public {
-        number = newNumber;
-    }
-
-    function increment() public {
-        number++;
-    }
+    
 }
